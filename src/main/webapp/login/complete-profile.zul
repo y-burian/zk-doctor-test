@@ -1,0 +1,70 @@
+<?link rel="stylesheet" type="text/css" href="/style.css"?>
+<zk>
+
+	<style></style>
+
+	<div height="100%" align="center">
+
+		<window height="800px" width="1200px" viewModel="@id('vm') @init('com.opengate.ViewModel.RegisterViewModel')">
+
+			<label value="Completa il profilo"
+				style="font-size: 2.4em;">
+			</label>
+
+			<vbox align="center" pack="center" hflex="1" vflex="1">
+
+				<div align="left">
+					<hbox width="400">
+						<vbox>
+							<label value="Nome" sclass="login-text"></label>
+							<textbox width="400px" height="50px"></textbox>
+						</vbox>
+						<space></space>
+						<vbox>
+							<label value="Cognome"
+								sclass="login-text">
+							</label>
+							<textbox width="400px" height="50px"></textbox>
+						</vbox>
+					</hbox>
+
+					<hbox>
+						<vbox>
+							<label value="Tessera sanitaria"
+								sclass="login-text">
+							</label>
+							<textbox width="400px" height="50px"></textbox>
+						</vbox>
+						<space></space>
+						<vbox>
+							<label value="Data di Nascita"
+								sclass="login-text">
+							</label>
+							<datebox width="200px"></datebox>
+						</vbox>
+
+						<vbox>
+							<label value="Cellulare"
+								sclass="login-text">
+							</label>
+							<textbox width="200px" height="50px"></textbox>
+						</vbox>
+
+					</hbox>
+					<separator height="40px" />
+					<button label="Conferma" 
+						sclass="base-button" onClick="@command('linkMainPage')">
+					</button>
+
+				</div>
+
+			</vbox>
+
+			<div align="left">
+
+			</div>
+		</window>
+
+	</div>
+
+</zk>

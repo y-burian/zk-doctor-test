@@ -1,0 +1,38 @@
+<?link rel="stylesheet" type="text/css" href="/style.css"?>
+<zk>
+
+
+	<div height="100%" align="center">
+
+		<window height="600px" width="700px" viewModel="@id('vm') @init('com.opengate.ViewModel.LoginViewModel')">
+
+			<label value="Login" style="font-size: 2.4em;"></label>
+			
+			<vbox align="center" pack="center" hflex="1" vflex="1" >
+				<div align="left" >
+				<label value="Email" sclass="login-text"></label>
+				<textbox placeholder="" width="400px" height="50px"></textbox>
+				<separator height="20px"/> 
+				<label value="Password" sclass="login-text"></label>
+				<textbox placeholder="" width="400px" height="50px"></textbox>
+				<separator height="20px"/> 
+				<button label="Login" width="120px" sclass="base-button"></button>
+				</div>
+
+			</vbox>
+			
+			<div align="left">
+			
+			<label value="Non hai ancora account? Registrati ora gratuitamente!" onClick="@command('linkRegister')"
+			tooltiptext="Registrati" style="cursor: pointer;"></label>
+			</div>
+		</window>
+
+	</div>
+	
+	<south>
+	<include src="/template/footer.zul"></include>
+	
+	</south>
+
+</zk>

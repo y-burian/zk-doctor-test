@@ -1,0 +1,22 @@
+<?link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet"?>
+<?link rel="stylesheet" type="text/css" href="/style.css"?>
+<zk>
+	<div viewModel="@id('vm') @init('com.opengate.Util.PageConfig')">
+		<label value="VisitaFacile.biz" style="font-size: 1.9em"></label>
+		<separator height="75px"></separator>
+		<div sclass="sidebar">
+			<listbox model="@load(vm.links)">
+				<template name="model">
+					<listitem>
+						<listcell style="cursor: pointer; font-size: 1em;"
+							label="@load(each.label)" iconSclass="@load(each.imageUri)"
+							onClick="@global-command('redirect', page=each)">
+						</listcell>
+					</listitem>
+				</template>
+			</listbox>
+		</div>
+		
+	</div>
+
+	</zk>

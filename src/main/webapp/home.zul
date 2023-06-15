@@ -1,0 +1,25 @@
+<?link rel="stylesheet" type="text/css" href="/style.css"?>
+
+<window
+	viewModel="@id('vm') @init('com.opengate.ViewModel.UserViewModel')">
+
+	<label value="@load(('Bentornat* '+=vm.currentUser.name))"
+		style="font-size: 3.5em;">
+	</label>
+
+	<separator height="50px"></separator>
+
+	<div align="center" >
+		<vlayout>
+
+			<hbox>
+
+				<image src="/images/doctor-wide.png" width="750px" height="300px" ></image>
+
+			</hbox>
+
+
+		</vlayout>
+	</div>
+
+</window>

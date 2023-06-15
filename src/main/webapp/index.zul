@@ -1,0 +1,22 @@
+<?link rel="stylesheet" type="text/css" href="/style.css"?>
+<zk>
+
+	<borderlayout hflex="1" vflex="1">
+
+		<west width="300px">
+			<include src="/template/sidebar.zul"></include>
+			
+		</west>
+
+	
+		<center autoscroll="true"
+			viewModel="@id('vm') @init('com.opengate.Util.PageConfig')">
+
+			<include src="@load(vm.includeSrc)"></include>
+
+		</center>
+
+
+	</borderlayout>
+
+</zk>

@@ -1,0 +1,15 @@
+<?link rel="stylesheet" type="text/css" href="/style.css"?>
+
+
+		<window>
+
+			<vbox>
+				<label value="new appointment"></label>
+				<label value="hello"></label>
+
+			</vbox>
+
+
+		</window>
+
+

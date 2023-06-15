@@ -1,0 +1,16 @@
+<?link rel="stylesheet" type="text/css" href="/style.css"?>
+
+
+
+	<window>
+
+		<vbox>
+			<label value="profile"></label>
+			<label value="profile"></label>
+
+		</vbox>
+
+
+	</window>
+
+

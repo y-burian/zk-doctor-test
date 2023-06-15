@@ -1,0 +1,45 @@
+<?link rel="stylesheet" type="text/css" href="/style.css"?>
+<zk>
+
+
+	<div height="100%" align="center">
+
+		<window height="600px" width="700px" viewModel="@id('vm') @init('com.opengate.ViewModel.RegisterViewModel')">
+
+			<label value="Registrazione" style="font-size: 2.4em;"></label>
+
+			<vbox align="center" pack="center" hflex="1" vflex="1">
+				<div align="left">
+					<label value="Email" sclass="login-text"></label>
+					<textbox placeholder="" hflex="1" height="50px"></textbox>
+					<separator height="20px" />
+
+
+					<hbox hflex="1">
+					<separator height="20px"/>
+						<vbox>
+							<label value="Password" sclass="login-text"></label>
+							<textbox height="50px"></textbox>
+						</vbox>
+						<space/>
+						<vbox>
+						<label value="Conferma Password" sclass="login-text"></label>
+							<textbox height="50px"></textbox>
+						</vbox>
+					</hbox>
+				<separator height="20px"/> 
+				<button label="Registrati" width="120px" sclass="base-button" onClick="@command('linkCompleteProfile')"></button>
+
+				</div>
+
+			</vbox>
+
+			<div align="left">
+
+				<label value="Hai gia' un account? Accedi!" onClick="@command('linkLogin')" style="cursor: pointer;" tooltiptext="Accedi"></label>
+			</div>
+		</window>
+
+	</div>
+
+</zk>

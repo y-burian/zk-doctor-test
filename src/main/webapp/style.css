@@ -1,0 +1,96 @@
+
+.sidebar{
+	font-size: 2.5em;
+	background-color:#102d35;
+	
+}
+
+.head-1{
+	font-size: 3.5em;
+}
+.head-2{
+	font-size: medium;
+}
+
+
+
+
+.banner {
+	background-color:#102d35;
+	color: white;
+	padding: 5px 10px;
+}
+.banner-head{
+	font-size: 2.4em;
+}
+.banner .logout{
+	text-decoration: underline;
+	cursor: pointer;
+} 
+
+.footer {
+	background-color:#102d35;
+	color: white;
+	padding-top: 5px;
+}
+
+.footer a,.footer a:VISITED {
+	color: white;	
+}
+
+.sidebar a,.sidebar a:VISITED {
+	color: black;
+	text-decoration: none;
+}
+
+.sidebar-fn{
+	cursor: pointer;
+}
+
+
+
+
+.row-title .z-label{
+	font-weight: bold;
+	color:#636363;
+}
+
+.fn-caption .z-caption-l{
+	font-weight: bold;
+	font-size: medium;
+	color: #636363;
+}
+
+.complete-todo .z-label{
+	text-decoration: line-through;
+}
+
+.login-text{
+	font-size: 1.4em;
+}
+
+.z-datebox-inp{
+width:100px;
+height:80px;
+}
+
+.base-button{
+	background-color: #a6dce2;
+	color: black;
+	border-color: black;
+	border-width: 1px;
+}
+
+.warn{
+	color:red;
+}
+
+.demo-main a,.demo-main a:VISITED{
+	color:#636363;
+	text-decoration: underline;
+	font-size: smaller;	
+}
+
+.todo-box {
+	padding-right:4px;
+}
