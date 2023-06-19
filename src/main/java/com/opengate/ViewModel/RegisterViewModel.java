@@ -24,4 +24,9 @@ public class RegisterViewModel {
 		Executions.getCurrent().sendRedirect("/");
 	}
 	
+	@Command
+	public void linkIndex() {
+		Executions.getCurrent().sendRedirect("/index.zul");
+	}
+	
 }

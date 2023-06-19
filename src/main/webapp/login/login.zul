@@ -16,7 +16,7 @@
 				<label value="Password" sclass="login-text"></label>
 				<textbox placeholder="" width="400px" height="50px"></textbox>
 				<separator height="20px"/> 
-				<button label="Login" width="120px" sclass="base-button"></button>
+				<button label="Login" width="120px" sclass="base-button" onClick="@command('linkIndex')"></button>
 				</div>
 
 			</vbox>

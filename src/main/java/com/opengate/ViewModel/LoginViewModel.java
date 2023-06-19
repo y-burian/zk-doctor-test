@@ -14,6 +14,11 @@ public class LoginViewModel {
 		
 	}
 	
+	@Command
+	public void linkIndex() {
+		Executions.getCurrent().sendRedirect("/index.zul");
+	}
+	
 	
 
 }

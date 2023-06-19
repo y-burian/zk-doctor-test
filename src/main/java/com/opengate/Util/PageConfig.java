@@ -44,6 +44,8 @@ public class PageConfig {
 		}
 
 	}
+	
+	
 
 	public List<Page> getLinks() {
 		return links;

@@ -2,13 +2,14 @@
 <?link rel="stylesheet" type="text/css" href="/style.css"?>
 <zk>
 	<div viewModel="@id('vm') @init('com.opengate.Util.PageConfig')">
-		<label value="VisitaFacile.biz" style="font-size: 1.9em"></label>
+		<label value="VisitaFacile.biz" style="font-size: 2em"></label>
 		<separator height="75px"></separator>
 		<div sclass="sidebar">
 			<listbox model="@load(vm.links)">
 				<template name="model">
 					<listitem>
-						<listcell style="cursor: pointer; font-size: 1em;"
+						<listcell
+							style="cursor: pointer; font-size: 0.7em;"
 							label="@load(each.label)" iconSclass="@load(each.imageUri)"
 							onClick="@global-command('redirect', page=each)">
 						</listcell>
@@ -16,7 +17,30 @@
 				</template>
 			</listbox>
 		</div>
-		
+
+		<div
+			style="  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px;"
+			viewModel="@id('user') @init('com.opengate.ViewModel.UserViewModel')">
+
+			<listbox>
+				<listitem>
+					<listcell label="@load(user.currentUser.email)"
+						iconSclass="z-icon-sign-out" onClick="@command('linkLogin')"
+						viewModel="@id('lg') @init('com.opengate.ViewModel.RegisterViewModel')">
+					</listcell>
+
+
+				</listitem>
+			</listbox>
+
+		</div>
+
 	</div>
 
-	</zk>
+
+
+
+</zk>

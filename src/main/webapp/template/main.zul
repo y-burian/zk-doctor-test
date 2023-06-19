@@ -1,5 +1,0 @@
-<zk>
-    <include id="mainInclude"
-        viewModel="@id('vm') @init('com.opengate.Util.PageConfig')"
-        src="@load(vm)" />
-</zk>
