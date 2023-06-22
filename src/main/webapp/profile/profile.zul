@@ -2,15 +2,18 @@
 
 
 
-	<window>
+<window>
 
-		<vbox>
-			<label value="profile"></label>
-			<label value="profile"></label>
+	<vbox>
+		<label value="profile"></label>
+		<label value="profile"></label>
 
-		</vbox>
+	</vbox>
+	<div viewModel="@id('vm') @init('com.opengate.Util.PageConfig')">
+	<label value="@load(vm.links)"></label>
+		<button label="Cambia il dottore" sclass="base-button" onClick="" href="/login/select-doctor.zul"></button>
+	</div>
 
-
-	</window>
+</window>
 
 

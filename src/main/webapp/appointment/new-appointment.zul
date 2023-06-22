@@ -1,13 +1,37 @@
 <?link rel="stylesheet" type="text/css" href="/style.css"?>
 
 
-		<window>
-
-			<vbox>
-				<label value="new appointment"></label>
-				<label value="hello"></label>
-
-			</vbox>
+		<window viewModel="@id('vm') @init('com.opengate.ViewModel.AppointmentViewModel')">
+	
+	<hlayout>
+	<vlayout>
+	<label value="Prenotazione visita" sclass="head-1"></label>
+	<separator height="25px"></separator>
+	<label value="Dottore di riferimetno: Pino Collado" style="font-size: 2em;"></label>
+	<separator height="25px"></separator>
+	<hbox>
+	<label value="Sciegli il giorno:" style="font-size: 1.5em;"></label>
+	<space width="50px"></space>
+	<label value="Seleziona uno slot:" style="font-size: 1.5em;"></label>
+	
+	</hbox>
+	
+	<hbox>
+	<datebox></datebox>
+	<space width="50px"></space>
+	<timebox width="200px"></timebox>
+	</hbox>
+	<separator height="25px"></separator>
+	<label value="Specificare il motivo della visita:" style="font-size: 1.3em;"></label>
+	<separator height="10px"></separator>
+	<textbox multiline="true" width="450px" height="250px"></textbox>
+	<separator height="10px"></separator>
+	<button label="Save" sclass="base-button" onClick="@command('addAppointment')"></button>
+	
+	
+	</vlayout>
+	
+	</hlayout>
 
 
 		</window>

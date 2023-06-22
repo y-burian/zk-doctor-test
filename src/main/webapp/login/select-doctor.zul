@@ -1,0 +1,51 @@
+<?link rel="stylesheet" type="text/css" href="/style.css"?>
+<zk>
+	<div viewModel="@id('user') @init('com.opengate.ViewModel.UserViewModel')">
+
+	
+		<west if="@load(user.currentUser.doctorSelected)">
+		<include src="/template/sidebar.zul"></include>
+	</west>
+	
+
+</div>
+
+	 <div height="100%" align="center"
+		viewModel="@id('vm') @init('com.opengate.ViewModel.DoctorViewModel')" >
+	
+		<window hflex="1" height="800px">
+			
+			
+		
+			<label value="Seleziona il tuo medico"
+				style="font-size: 2em;">
+			</label>
+
+			<listbox model="@load(vm.list)" hflex="1" rows="3" sclass="head-1" selectedItem="@bind(vm.selectedDoctor)">
+				<template name="model">
+		
+			<listitem onClick="@command('selectDoctor')">
+			<listcell>
+			<image src="@load(each.imageUrl)" height="200px" width="200px"></image>
+			</listcell>
+			<listcell label="@load(('Dott. '+=each.name+=' '+=each.lastName))"></listcell>
+			<listcell label="@load(each.fiscalCode)" iconSclass=""></listcell>
+			<listcell label="@load(each.phoneNumber)" iconSclass=""></listcell>
+			<listcell label="@load(each.workTime)" iconSclass=""></listcell>
+			
+			
+			</listitem>
+	
+
+				</template>	
+
+			</listbox>
+
+		</window>
+		
+
+
+	</div> 
+
+
+</zk>

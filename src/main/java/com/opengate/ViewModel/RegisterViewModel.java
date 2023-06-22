@@ -25,8 +25,8 @@ public class RegisterViewModel {
 	}
 	
 	@Command
-	public void linkIndex() {
-		Executions.getCurrent().sendRedirect("/index.zul");
+	public void linkDoctorSelect() {
+		Executions.getCurrent().sendRedirect("/login/select-doctor.zul");
 	}
 	
 }

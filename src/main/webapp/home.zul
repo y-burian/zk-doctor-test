@@ -1,7 +1,10 @@
 <?link rel="stylesheet" type="text/css" href="/style.css"?>
 
+
 <window
 	viewModel="@id('vm') @init('com.opengate.ViewModel.UserViewModel')">
+	
+	
 
 	<label value="@load(('Bentornat* '+=vm.currentUser.name))"
 		style="font-size: 3.5em;">
@@ -14,7 +17,7 @@
 
 			<hbox>
 
-				<image src="/images/doctor-wide.png" width="1000px"
+				<image src="/images/doctor-new.jpg" width="1000px"
 					height="250px">
 				</image>
 
@@ -24,44 +27,44 @@
 	</div>
 	<separator height="50px"></separator>
 
-	<div align="center">
+	<div align="center" viewModel="@id('vm') @init('com.opengate.Util.PageConfig')">
 
 		<hlayout>
 			<vlayout>
 				<div>
 					<button sclass="home-buttons"
-						label="Prenota ora un appuntamento &#xA;con un click">
+						label="Prenota ora un appuntamento" onClick="@global-command('redirect', page=vm.pAppointment)">
 					</button>
 				</div>
 
 				<space width="50px"></space>
 
 				<div>
-					<button sclass="home-buttons"></button>
+					<button sclass="home-buttons"
+						label="Il mio account">
+					</button>
 				</div>
-
+				<separator></separator>
 
 			</vlayout>
 
 			<separator width="25px"></separator>
 			<vlayout>
 				<div>
-					<button sclass="home-buttons"></button>
+					<button sclass="home-buttons"
+						label="Controlla i tuoi appuntamenti">
+					</button>
 				</div>
 				<space width="50px"></space>
 				<div>
-					<button sclass="home-buttons"></button>
+					<button sclass="home-buttons"
+						label="La mia cartella clinica">
+					</button>
 				</div>
-
+				<separator></separator>
 			</vlayout>
 
 		</hlayout>
 	</div>
-
-
-
-
-
-
 
 </window>

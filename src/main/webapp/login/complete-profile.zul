@@ -53,7 +53,7 @@
 					</hbox>
 					<separator height="40px" />
 					<button label="Conferma" 
-						sclass="base-button" onClick="@command('linkMainPage')">
+						sclass="base-button" onClick="@command('linkDoctorSelect')">
 					</button>
 
 				</div>

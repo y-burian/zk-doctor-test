@@ -8,6 +8,13 @@
 	justify-content: center;
 }
 
+.base-button {
+	background-color: #a6dce2;
+	color: black;
+	border-color: black;
+	border-width: 1px;
+}
+
 
 
 .home-buttons {
@@ -27,7 +34,7 @@
 }
 
 .head-2 {
-	font-size: medium;
+	font-size: 2.5em;
 }
 
 .text-bottom {
@@ -94,12 +101,7 @@
 	height: 80px;
 }
 
-.base-button {
-	background-color: #a6dce2;
-	color: black;
-	border-color: black;
-	border-width: 1px;
-}
+
 
 .warn {
 	color: red;

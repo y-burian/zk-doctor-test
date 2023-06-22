@@ -11,6 +11,7 @@ public class UserUtil {
 
 	public UserUtil() {
 		list.add(new User("Luigi", "Verdi", "verdi@gmail.com", "ABSDASD123ASD", "123456678", new Date(1988, 10, 10)));
+		list.get(0).setDoctorSelected(true);
 
 	}
 

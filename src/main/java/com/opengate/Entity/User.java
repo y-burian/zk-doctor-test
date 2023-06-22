@@ -10,6 +10,7 @@ public class User {
 	private String fiscalCode;
 	private String phoneNumber;
 	private Date birth;
+	private boolean doctorSelected;
 
 	public User(String name, String lastName, String email, String fiscalCode, String phoneNumber, Date birth) {
 		this.name = name;
@@ -19,6 +20,8 @@ public class User {
 		this.phoneNumber = phoneNumber;
 		this.birth = birth;
 	}
+	
+	
 
 	public String getName() {
 		return name;
@@ -67,5 +70,20 @@ public class User {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+
+
+
+	public boolean isDoctorSelected() {
+		return doctorSelected;
+	}
+
+
+
+	public void setDoctorSelected(boolean doctorSelected) {
+		this.doctorSelected = doctorSelected;
+	}
+	
+	
+	
 
 }

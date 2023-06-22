@@ -12,21 +12,25 @@ import org.zkoss.zk.ui.Executions;
 public class PageConfig {
 
 	public List<Page> links = new ArrayList<>();
-	private String includeSrc="/home.zul";
+	private String includeSrc = "/home.zul";
+
+	private Page pAppointment;
+	private Page selectedPage;
 
 	public PageConfig() {
 
-		links.add(new Page("/home.zul", "Home", "z-icon-home"));
+		pAppointment = new Page("/home.zul", "Home", "z-icon-home");
+		links.add(pAppointment);
 		links.add(new Page("/appointment/new-appointment.zul", "Prenota ora", "z-icon-stethoscope"));
 		links.add(new Page("/appointment/appointments.zul", "I miei appuntamenti", "z-icon-calendar"));
 		links.add(new Page("/profile/profile.zul", "Profilo", "z-icon-address-card"));
-
+		links.add(new Page("/login/select-doctor.zul", "Seleziona Dottore", ""));
+		
 	}
 
-
-
 	@GlobalCommand
-	@NotifyChange("includeSrc")
+	@NotifyChange( "includeSrc")
+	// 
 	public void redirect(@BindingParam("page") Page page) {
 		String locationUri = page.getUri();
 		String label = page.getLabel();
@@ -44,8 +48,6 @@ public class PageConfig {
 		}
 
 	}
-	
-	
 
 	public List<Page> getLinks() {
 		return links;
@@ -59,9 +61,25 @@ public class PageConfig {
 		return includeSrc;
 	}
 
+	public Page getpAppointment() {
+		return pAppointment;
+	}
 
-	
-	
+	public void setpAppointment(Page pAppointment) {
+		this.pAppointment = pAppointment;
+	}
+
+	public Page getSelectedPage() {
+		return selectedPage;
+	}
+
+	public void setSelectedPage(Page selectedPage) {
+		this.selectedPage = selectedPage;
+	}
+
+	public void setIncludeSrc(String includeSrc) {
+		this.includeSrc = includeSrc;
+	}
 	
 	
 
